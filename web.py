@@ -10,7 +10,7 @@ env=os.getenv('ENV')
 
 @app.route("/")
 def home():
-    return f"Hello from {env}"
+    return f"Hello, you are connected to {env} environment"
 
 @app.route("/picture")
 def pic():

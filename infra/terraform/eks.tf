@@ -43,7 +43,19 @@ module "eks" {
     }
   }
   cluster_endpoint_public_access = true
-  manage_aws_auth_configmap      = false
+  manage_aws_auth_configmap      = true
+
+  aws_auth_roles = [
+    {
+      rolearn  = aws_iam_role.role2.arn
+      username = "${local.name}-role"
+      groups   = ["system:masters"]
+    },
+  ]
+
+  aws_auth_accounts = [
+    data.aws_caller_identity.current.account_id
+  ]
 }
 
 module "cert_manager_irsa_role" {
