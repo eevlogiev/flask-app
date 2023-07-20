@@ -1,7 +1,7 @@
 resource "aws_security_group" "jenkins" {
   name        = "${local.name}-allow-jenkins"
   description = "Allow Jenkins inbound traffic"
-  vpc_id      = module.vpc.vpc_id
+ # vpc_id      = module.vpc.vpc_id #Jenkins moved to default VPC
   ingress {
     description = "Jenkins Web access"
     from_port   = 8080
