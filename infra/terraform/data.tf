@@ -19,3 +19,7 @@ data "aws_caller_identity" "current" {}
 output "account_id" {
   value = data.aws_caller_identity.current.account_id
 }
+
+output "zone_arn" {
+  value = aws_route53_zone.main.arn
+}

@@ -63,9 +63,10 @@ module "cert_manager_irsa_role" {
   depends_on = [module.eks]
   version    = "v5.11.2"
 
-  role_name                     = "cert-manager"
-  attach_cert_manager_policy    = true
-  cert_manager_hosted_zone_arns = ["arn:aws:route53:::hostedzone/Z0488547RN1660JTGW"]
+  role_name                  = "cert-manager"
+  attach_cert_manager_policy = true
+#  cert_manager_hosted_zone_arns = ["arn:aws:route53:::hostedzone/Z01277618FMVX82FWZB2"]
+  cert_manager_hosted_zone_arns = ["${aws_route53_zone.main.arn}"]
 
   oidc_providers = {
     ex = {
@@ -80,9 +81,10 @@ module "external_dns_irsa_role" {
   depends_on = [module.eks]
   version    = "v5.11.2"
 
-  role_name                     = "external-dns"
-  attach_external_dns_policy    = true
-  external_dns_hosted_zone_arns = ["arn:aws:route53:::hostedzone/Z0488547RN1660JTGW"]
+  role_name                  = "external-dns"
+  attach_external_dns_policy = true
+#  external_dns_hosted_zone_arns = ["arn:aws:route53:::hostedzone/Z01277618FMVX82FWZB2"]
+  external_dns_hosted_zone_arns = ["${aws_route53_zone.main.arn}"]
 
   oidc_providers = {
     ex = {

@@ -16,5 +16,5 @@ locals {
   azs           = ["us-east-1a", "us-east-1b", "us-east-1c"]
   vpc_cidr      = "10.0.0.0/16"
   instance_type = "t2.medium"
-  account_id     = data.aws_caller_identity.current.account_id
+  account_id    = data.aws_caller_identity.current.account_id
 }
