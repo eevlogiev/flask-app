@@ -1,10 +1,6 @@
 <a name="readme-top"></a>
 
 
-[![LinkedIn][linkedin-shield]][linkedin-url]
-
-
-
 <!-- PROJECT LOGO -->
 <br />
 <div align="center">
@@ -48,9 +44,6 @@
       </ul>
     </li>
     <li><a href="#usage">Usage</a></li>
-    <li><a href="#roadmap">Roadmap</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-    <li><a href="#license">License</a></li>
     <li><a href="#contact">Contact</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -127,23 +120,10 @@ _For more examples, please refer to the [Documentation](https://example.com)_
 
 
 
-<!-- ROADMAP -->
-## Roadmap
-
-- [ ] Feature 1
-- [ ] Feature 2
-- [ ] Feature 3
-    - [ ] Nested Feature
-
-See the [open issues](https://github.com/github_username/repo_name/issues) for a full list of proposed features (and known issues).
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-
 <!-- CONTACT -->
 ## Contact
 
-Evelin Evlogiev - email@email_client.com
+Evelin Evlogiev - [![LinkedIn][linkedin-shield]][linkedin-url]
 
 Project Link: [https://github.com/eevlogiev/flask-app](https://github.com/eevlogiev/flask-app)
 
@@ -154,7 +134,7 @@ Project Link: [https://github.com/eevlogiev/flask-app](https://github.com/eevlog
 <!-- ACKNOWLEDGMENTS -->
 ## Acknowledgments
 
-* []()
+* [Nik Vaklinov](https://github.com/nvaklinov/nvaklinov)
 * []()
 * []()
 
