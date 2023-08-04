@@ -40,7 +40,7 @@ resource "aws_iam_role" "role2" {
    {
      "Action": "sts:AssumeRole",
      "Principal": {
-       "AWS": "arn:aws:iam::389224572829:root"
+       "AWS": "arn:aws:iam::661308776255:root"
      },
      "Effect": "Allow" 
    }
