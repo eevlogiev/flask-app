@@ -1,11 +1,6 @@
 <a name="readme-top"></a>
 
 
-[![Contributors][contributors-shield]][contributors-url]
-[![Forks][forks-shield]][forks-url]
-[![Stargazers][stars-shield]][stars-url]
-[![Issues][issues-shield]][issues-url]
-[![MIT License][license-shield]][license-url]
 [![LinkedIn][linkedin-shield]][linkedin-url]
 
 
@@ -78,7 +73,7 @@ Here's a blank template to get started: To avoid retyping too much info. Do a se
 
 * [![AWS][AWS]][AWS-url]
 * [![Terraform][Terraform]][Terraform-url]
-* [![Kubernetes][Kuberenetes]][Kubernetes-url]
+* [![Kubernetes][Kubernetes]][Kubernetes-url]
 * [![Helm][Helm]][Helm-url]
 * [![Jenkins][Jenkins]][Jenkins-url]
 * [![Python][Python]][Python-url]
