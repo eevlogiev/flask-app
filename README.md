@@ -11,7 +11,7 @@
 <h3 align="center">Flask App Project</h3>
 
   <p align="center">
-    project_description
+    Simple Flask Project
     <br />
     <a href="https://github.com/eevlogiev/flask-app"><strong>Explore the docs »</strong></a>
     <br />
