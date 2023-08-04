@@ -15,7 +15,7 @@ pipeline {
         stage ("Build") {
         steps {
             sh '''
-            docker build -t $image_name:$GIT_COMMIT" .
+            docker build -t ${image_name}:$GIT_COMMIT" .
             '''
         }
     }
@@ -23,13 +23,13 @@ pipeline {
         steps {
             sh '''
             port=$(shuf -i 2000-10000 -n 1)
-            docker run -dit -p $port:5000 $image_name:$GIT_COMMIT
+            docker run -dit -p $port:5000 ${image_name}:$GIT_COMMIT
             sleep 5
             curl http://localhost:$port
             exit_status=$?
             if [[ $exit_status == 0 ]]
             then echo "TEST OK" && docker stop $(docker ps -a -q)
-            else echo "TEST FAILED" && docker stop $(docker pas -a -q) && exit 1
+            else echo "TEST FAILED" && docker stop $(docker ps -a -q) && exit 1
             fi
             '''
         }
