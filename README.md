@@ -66,10 +66,12 @@ This project builds a Kubernetes cluster in AWS via Terraform. It also creates a
 
 * [![AWS][AWS]][AWS-url]
 * [![Terraform][Terraform]][Terraform-url]
+* [![Docker][Docker]][Docker-url]
 * [![Kubernetes][Kubernetes]][Kubernetes-url]
 * [![Helm][Helm]][Helm-url]
 * [![Jenkins][Jenkins]][Jenkins-url]
 * [![Python][Python]][Python-url]
+* [![Flask][Flask]][Flask-url]
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
