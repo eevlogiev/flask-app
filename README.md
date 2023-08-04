@@ -147,16 +147,20 @@ Project Link: [https://github.com/eevlogiev/flask-app](https://github.com/eevlog
 [linkedin-shield]: https://img.shields.io/badge/-LinkedIn-black.svg?style=for-the-badge&logo=linkedin&colorB=555
 [linkedin-url]: https://www.linkedin.com/in/e-evlogiev/
 [product-screenshot]: images/screenshot.png
-[AWS]: https://img.shields.io/badge/aws-%23232F3E?style=for-the-badge&logo=aws
+[AWS]: https://img.shields.io/badge/AWS-FF9900.svg?style=for-the-badge&logo=amazon-aws&logoColor=white
 [AWS-url]: https://aws.amazon.com/
-[Terraform]: https://img.shields.io/badge/terraform-%237B42BC?style=for-the-badge&logo=terraform
+[Terraform]: https://img.shields.io/badge/terraform-%235835CC.svg?style=for-the-badge&logo=terraform&logoColor=white
 [Terraform-url]: https://www.terraform.io/
-[Kubernetes]: https://img.shields.io/badge/kubernetes-%2359666C?style=for-the-badge&logo=kubernetes
+[Docker]: https://img.shields.io/badge/docker-0db7ed.svg?style=for-the-badge&logo=docker&logoColor=white
+[Docker-url]: https://www.docker.com/
+[Kubernetes]: https://img.shields.io/badge/kubernetes-326ce5.svg?style=for-the-badge&logo=kubernetes&logoColor=white
 [Kubernetes-url]: https://kubernetes.io/
 [Helm]: https://img.shields.io/badge/helm-%230F1689?style=for-the-badge&logo=helm
 [Helm-url]: https://helm.sh/
-[Jenkins]: https://img.shields.io/badge/jenkins-%234A4A55?style=for-the-badge&logo=jenkins
+[Jenkins]: https://img.shields.io/badge/jenkins-%232C5263.svg?style=for-the-badge&logo=jenkins&logoColor=white
 [Jenkins-url]: https://www.jenkins.io/
-[Python]: https://img.shields.io/badge/python-%23?style=for-the-badge&logo=python&logoColor=%233776AB&color=%23230F1689
+[Python]: https://img.shields.io/badge/python-3670A0?style=for-the-badge&logo=python&logoColor=ffdd54
 [Python-url]: https://www.python.org/
+[Flask]: https://img.shields.io/badge/flask-%23000.svg?style=for-the-badge&logo=flask&logoColor=white
+[Flask-url]: https://flask.palletsprojects.com/en/2.3.x/
 
