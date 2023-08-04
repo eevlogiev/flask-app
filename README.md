@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/eevlogiev/flask-app">
-    <img src="images/logo.png" alt="Logo" width="80" height="80">
+    <img src="images/devops.svg" alt="Logo" width="80" height="80">
   </a>
 
 <h3 align="center">Flask App Project</h3>
