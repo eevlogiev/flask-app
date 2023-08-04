@@ -62,7 +62,7 @@ This project builds a Kubernetes cluster in AWS via Terraform. It also creates a
 
 
 
-### Built With
+### Tools and Technologies used
 
 * [![AWS][AWS]][AWS-url]
 * [![Terraform][Terraform]][Terraform-url]
