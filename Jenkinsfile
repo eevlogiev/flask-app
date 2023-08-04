@@ -1,8 +1,8 @@
 def Deploy(DeployEnv) {
-    sh """
+    sh '''
     source ../../assume_role.sh
     helm upgrade flask-app ./helm/ --atomic --wait --install --namespace $DeployEnv --set deployment.tag=$GIT_COMMIT --create-namespace --set deployment.env=$DeployEnv 
-    """
+    '''
 }
 
 pipeline {
