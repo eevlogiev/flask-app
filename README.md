@@ -56,7 +56,7 @@
 
 [![Product Name Screen Shot][product-screenshot]](https://example.com)
 
-Here's a blank template to get started: To avoid retyping too much info. Do a search and replace with your text editor for the following: `github_username`, `repo_name`, `twitter_handle`, `linkedin_username`, `email_client`, `email`, `project_title`, `project_description`
+This project builds a Kubernetes cluster in AWS via Terraform. It also creates a Jenkins server where via pipeline Flask application is being deployed. Deployment creates flask application running on NGINX server on Kubernetes pod. Deployment can also add SSL certificate and dynamically crete DNS entries in Route53 for specific domain.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
