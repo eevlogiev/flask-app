@@ -33,7 +33,7 @@
     <li>
       <a href="#about-the-project">About The Project</a>
       <ul>
-        <li><a href="#built-with">Tools Used</a></li>
+        <li><a href="#tools-and-technologies-used">Tools Used</a></li>
       </ul>
     </li>
     <li>
