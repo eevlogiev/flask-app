@@ -54,7 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-This project uses Terraform to build an environment in AWS (VPC, subnets, EC2 instnces, EKS, IAM roles, etc) which is then used to create EKS cluster. It also creates a Jenkins server where via pipeline Flask application is being deployed. Deployment creates flask application running on NGINX server on Kubernetes pod and K8s addons like external-dns and cert-manager for creating SSL certificates and dynamically updating DNS entries in Route53 for specific domain.
+This project uses Terraform to build an environment in AWS (VPC, subnets, EC2 instnces, ECR, IAM roles, etc) and then EKS cluster on top of that. It also creates a Jenkins server where via pipeline Flask application is being deployed. Deployment creates flask application running on NGINX server on Kubernetes pod and K8s addons like external-dns and cert-manager for creating SSL certificates and dynamically updating DNS entries in Route53 for specific domain.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -83,15 +83,27 @@ To get a local copy up and running follow these simple example steps.
 
 ### Prerequisites
 
-This is an example of how to list things you need to use the software and how to install them.
-* npm
-  ```sh
-  npm install npm@latest -g
-  ```
+In order to execute this project user must have AWS account with proper privileges.
+
+Also the following tools and packages must be installed:
+1. AWS CLI
+2. Terraform
+3. Git
+
+
 
 ### Installation
 
-1. Deploy infrastructure in AWS:
+1. Clone the repo
+   ```
+   got clone https://github.com/eevlogiev/flask-app.git
+   ```
+2. Go to /infra/terraform
+3. Configure your AWS credentials by adding Access key and Secret key:
+   ```
+   aws configure
+   ```
+4. Deploy the infrastructure in AWS:
    ```
    terraform apply
    ```
