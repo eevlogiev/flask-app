@@ -5,7 +5,7 @@
 <br />
 <div align="center">
   <a href="https://github.com/eevlogiev/flask-app">
-    <img src="images/devops.svg" alt="Logo" width="80" height="80">
+    <img src="images/devops.svg" alt="Logo" width="800" height="200">
   </a>
 
 <h3 align="center">Flask App Project</h3>
@@ -54,9 +54,7 @@
 <!-- ABOUT THE PROJECT -->
 ## About The Project
 
-[![Product Name Screen Shot][product-screenshot]](https://example.com)
-
-This project builds a Kubernetes cluster in AWS via Terraform. It also creates a Jenkins server where via pipeline Flask application is being deployed. Deployment creates flask application running on NGINX server on Kubernetes pod. Deployment can also add SSL certificate and dynamically crete DNS entries in Route53 for specific domain.
+This project uses Terraform to build an environment in AWS (VPC, subnets, EC2 instnces, EKS, IAM roles, etc) which is then used to create EKS cluster. It also creates a Jenkins server where via pipeline Flask application is being deployed. Deployment creates flask application running on NGINX server on Kubernetes pod and K8s addons like external-dns and cert-manager for creating SSL certificates and dynamically updating DNS entries in Route53 for specific domain.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -93,16 +91,19 @@ This is an example of how to list things you need to use the software and how to
 
 ### Installation
 
-1. Get a free API Key at [https://example.com](https://example.com)
+1. Deploy infrastructure in AWS:
+   ```
+   terraform apply
+   ```
 2. Clone the repo
    ```sh
    git clone https://github.com/github_username/repo_name.git
    ```
-3. Install NPM packages
+4. Install NPM packages
    ```sh
    npm install
    ```
-4. Enter your API in `config.js`
+5. Enter your API in `config.js`
    ```js
    const API_KEY = 'ENTER YOUR API';
    ```
