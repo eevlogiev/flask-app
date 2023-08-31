@@ -96,7 +96,7 @@ Also the following tools and packages must be installed:
 
 1. Clone the repo
    ```
-   got clone https://github.com/eevlogiev/flask-app.git
+   git clone https://github.com/eevlogiev/flask-app.git
    ```
 2. Go to /infra/terraform
 3. Configure your AWS credentials by adding Access key and Secret key:
