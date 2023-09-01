@@ -28,7 +28,7 @@ cp ~/.kube/config /var/lib/jenkins/.kube/
 chown -R jenkins: /var/lib/jenkins/
 chmod 600 /var/lib/jenkins/.kube/config
 
-echo 'OUT=$(aws sts assume-role --role-arn arn:aws:iam::501533612229:role/eks-role --role-session-name AWSCLI-Session) \
+echo 'OUT=$(aws sts assume-role --role-arn arn:aws:iam::378407054436:role/eks-role --role-session-name AWSCLI-Session) \
 && export AWS_ACCESS_KEY_ID=$(echo $OUT | jq -r '.Credentials''.AccessKeyId') \
 && export AWS_SECRET_ACCESS_KEY=$(echo $OUT | jq -r '.Credentials''.SecretAccessKey') \
 && export AWS_SESSION_TOKEN=$(echo $OUT | jq -r '.Credentials''.SessionToken') \

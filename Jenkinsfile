@@ -8,7 +8,7 @@ def Deploy(DeployEnv) {
 pipeline {
     agent any
     environment {
-        image_name="501533612229.dkr.ecr.us-east-1.amazonaws.com/flask"
+        image_name="378407054436.dkr.ecr.us-east-1.amazonaws.com/flask"
         region="us-east-1"
     }
     stages {
@@ -37,7 +37,7 @@ pipeline {
         stage ("Push") {
             steps {
                 sh '''
-                docker login -u AWS https://501533612229.dkr.ecr.us-east-1.amazonaws.com -p $(aws ecr get-login-password --region us-east-1)
+                docker login -u AWS https://378407054436.dkr.ecr.us-east-1.amazonaws.com -p $(aws ecr get-login-password --region us-east-1)
                 docker push $image_name:$GIT_COMMIT
                 '''
              }
