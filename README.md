@@ -107,13 +107,10 @@ Also the following tools and packages must be installed:
    ```
    terraform apply
    ```
-2. Clone the repo
-   ```sh
-   git clone https://github.com/github_username/repo_name.git
-   ```
-4. Login to Jenkins on EC2 public IP and port 8080
-5. Configure your Githhub private SSH key in Jenkins
-6. Create MultiBranch Pipeline, pointing to your Github repo and the configured Github credentials
+5. Point the NS servers for your domain to the Route53 DNS servers
+6. Login to Jenkins on EC2 public IP and port 8080
+7. Configure your Githhub private SSH key in Jenkins
+8. Create MultiBranch Pipeline, pointing to your Github repo and the configured Github credentials
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
